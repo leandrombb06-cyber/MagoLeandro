@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta>
+    <title>Juego</title>
+    <script type="text/javascript" src="script.js" defer></script>
+</head>
+<body>
+    <button onclick="empezarFuncion()"> START </button>
+    <fieldset style="height: 500px;">
+        <table align="center" style="margin-top: 150px;">
+            <tr>
+                <th style="width: 180px;">
+                Jugador 1
+                    <br>
+                    <select id="probabilidad1">
+                    <option value="0.6">60%</option>
+                    <option value="0.8">80%</option>
+                    <option value="1">100%</option>
+                    </select>
+                </th>
+                <th style="width: 180px;">Resultado</th>
+                <th style="width: 180px;">Jugador 2</th>
+                <th style="width: 180px;">Jugador 3<br>
+                <span style="color: green;">70%</span>
+                </th>
+            </tr>
+            <tr>
+                <td>
+                    <button id="1atacar" onclick="jugador1atacar()" style="background-color: cadetblue; width: 140px; height: 54px;">
+                        Atacar
+                    </button>
+                    <br>
+                    <select id="objetivo1" style="background-color: #ff6969; width: 140px;">
+                        <option value="2">Jugador 2</option>
+                        <option value="3">Jugador 3</option>
+                    </select>
+                    <br>
+                    <button id="1pasar" onclick="jugador1pasar()" style="background-color: #b5dc94; width: 140px; height: 54px;">
+                        Pasar
+                    </button>
+                    <br>
+                    <p id="estado1">Vivo</p>
+                </td>
+                <td style="text-align: center; width: 250px;">
+                    <fieldset id="resultado" style="height: 200px; width: 220px; margin: auto;">
+                    </fieldset>
+                </td>
+                <td style="text-align: center; width: 180px;">
+                    <button id="2atacar" onclick=jugador2atacar() style="background-color: cadetblue; width: 140px; height: 54px;">
+                        Atacar
+                    </button>
+                    <br><br>
+                    <select id="objetivo2" style="background-color: #ff6969; width: 140px;">
+                    <option value="1">Jugador 1</option>
+                    <option value="3">Jugador 3</option>
+                    </select>
+                    <br><br>
+                    <button id="2pasar" onclick="jugador2pasar()" style="background-color: #b5dc94; width: 140px; height: 54px;">
+                        Pasar
+                    </button>
+                    <p id="estado2">Vivo</p>
+                </td>
+                <td style="text-align: center; width: 180px;">
+                    <button id="3atacar" onclick="jugador3atacar()" style="background-color: cadetblue; width: 140px; height: 54px;">
+                        Atacar
+                    </button>
+                    <br><br>
+                    <select id="objetivo3" style="background-color: #ff6969; width: 140px;">
+                        <option value="1">Jugador 1</option>
+                        <option value="2">Jugador 2</option>
+                    </select>
+                    <br><br>
+                    <button id="3pasar" onclick="jugador3pasar()" style="background-color: #b5dc94; width: 140px; height: 54px;">
+                        Pasar
+                    </button>
+                    <p id="estado3">Vivo</p>
+                </td>
+            </tr>
+        </table>
+    </fieldset>
+</body>
+</html>
